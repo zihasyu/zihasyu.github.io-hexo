@@ -5,7 +5,7 @@
 # Site
 title: carzo
 subtitle: "Zihasyu's Personal Site"
-description: 'Hope my friends and I can get the happiness we deserve'
+description: 'Hope friends and I can get the happiness we deserve'
 keywords: Storage system
 author: Zihasyu
 language: en
@@ -69,8 +69,14 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-  Compression: compression
+  压缩算法: Compression algorithms
+  杂谈: note
 tag_map:
+  Chunking
+  Compression
+  Storage system
+  Operating system
+  Computer science
 
 
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
