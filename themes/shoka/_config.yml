@@ -224,7 +224,7 @@ audio:
   #    - https://music.163.com/#/playlist?id=2031842656
 
 # random image api
-image_server: "https://acg.xydwz.cn/api/api.php" #填你的 API
+image_server:  "https://img.paulzzh.com/touhou/random" #填你的 API
 
 # Algolia Search
 # For more information: https://www.algolia.com
