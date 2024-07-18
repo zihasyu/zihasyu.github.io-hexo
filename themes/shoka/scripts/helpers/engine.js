@@ -28,7 +28,9 @@ const randomBG = function (count = 1, image_server = null, image_list = []) {
     if (img.startsWith('//') || img.startsWith('http')) {
       return img
     } else {
-      return 'https://images.weserv.nl/?url=https://gitee.com/fufan1025/blog_img/raw/master/' + img
+      var newSize = size.substring(2);
+      return 'https://' + img + '@' + newSize + 'w.avif'
+      //'https://images.weserv.nl/?url=https://gitee.com/fufan1025/blog_img/raw/master/' + img
       // 'https://tva'+randomServer+'.sinaimg.cn/'+size+'/'+img
     }
   }
