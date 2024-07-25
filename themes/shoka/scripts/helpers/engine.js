@@ -45,7 +45,8 @@ const randomBG = function (count = 1, image_server = null, image_list = []) {
     }
 
     return shuffled.slice(min).map(function (img) {
-      return parseImage(img, 'large')
+      return 'https://raw.githubusercontent.com/zihasyu/zihasyu.github.io/master/images/avatar.jpg'
+      //return parseImage(img, 'large')
     });
   }
 
