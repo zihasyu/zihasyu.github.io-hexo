@@ -80,6 +80,7 @@ default_category: uncategorized
 category_map:
   压缩算法: Compression algorithms
   杂谈: note
+  聊天杂谈: chat note
 tag_map:
   Chunking
   Compression
