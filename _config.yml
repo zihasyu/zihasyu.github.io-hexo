@@ -81,12 +81,15 @@ category_map:
   压缩算法: Compression algorithms
   杂谈: note
   聊天杂谈: chat note
+  计算机科学: Computer science
 tag_map:
   Chunking
   Compression
   Storage system
   Operating system
   Computer science
+  Final review
+  Discipline Summary
 
 
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
