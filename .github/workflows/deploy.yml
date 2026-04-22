@@ -1,0 +1,41 @@
+name: Deploy Hexo
+
+on:
+  push:
+    branches:
+      - main # 这里改成你存放源码的分支名，通常是 main 或 master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          submodules: true # 必须开启子模块支持，Butterfly 主题通常用 git 子模块管理
+
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Hexo 推荐版本
+          cache: 'npm'
+
+      - name: Install Dependencies 📦
+        run: |
+          npm install
+
+      - name: Generate Static Files 🏗️
+        run: |
+          npx hexo generate
+
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # 如果你想推送到 gh-pages 分支：
+          # publish_branch: gh-pages
+          # 如果你想推送到 main 分支的 /docs 文件夹（GitHub Pages 常用设置）：
+          # publish_branch: main
+          # publish_dir: ./public
+          # keep_files: true
