@@ -1,32 +1,32 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "hexo-blog",
+  "version": "1.0.0",
+  "description": "My Hexo Blog",
   "private": true,
+  "hexo": {
+    "version": "8.1.1"
+  },
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
-  },
-  "hexo": {
-    "version": "8.1.1"
+    "server": "hexo server",
+    "start": "hexo server"
   },
   "dependencies": {
     "hexo": "^8.1.1",
-    "hexo-algoliasearch": "^2.0.1",
-    "hexo-autoprefixer": "^2.0.0",
+    "hexo-cli": "^4.3.0",
     "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-pagination": "^4.0.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-multi-markdown-it": "^0.1.5",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-symbols-count-time": "^0.7.1",
-    "hexo-util": "^3.3.0"
-  },
-  "devDependencies": {
-    "hexo-feed": "^1.1.2"
+    "hexo-theme-butterfly": "^5.5.4",
+    "hexo-util": "^4.0.0",
+    "moment-timezone": "^0.6.0"
   }
 }
